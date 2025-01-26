@@ -1,0 +1,25 @@
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 40px;
+  height: 8px;
+  background: #cccccc;
+  z-index: 10;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  transition: background 0.3s;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 8px;
+  background: black;
+  z-index: 100;
+  border-radius: 50px;
+}
