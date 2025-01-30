@@ -31,8 +31,8 @@ export default function RootLayout({
             <nav className="cursor-pointer">Курсы</nav>
             <nav className="cursor-pointer">Библиотека</nav>
           </div>
-          <div className="flex items-center gap-4">
-            <button className="hidden sm:block">Вход</button>
+          <div className="hidden sm:flex items-center gap-4 ">
+            <button>Вход</button>
             <ImageComponent
               src="/logoHeader/back.svg"
               alt="STEMPS"
@@ -40,6 +40,9 @@ export default function RootLayout({
               height={28}
             />
           </div>
+          <button className="sm:hidden text-white px-2 py-1 bg-black text-base rounded">
+            Меню
+          </button>
         </header>
         {children}
       </body>

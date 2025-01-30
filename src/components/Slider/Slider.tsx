@@ -12,7 +12,7 @@ import "./paginationCustom.css";
 const Slider: React.FC = () => {
   return (
     <div className="w-full">
-      <div className="custom-pagination mb- sm:hidden text-left m-3"></div>
+      <div className="custom-pagination mb- sm:hidden text-left m-3 ml-0"></div>
 
       <Swiper
         slidesPerView={1}

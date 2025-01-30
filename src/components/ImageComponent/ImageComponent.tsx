@@ -11,7 +11,7 @@ const ImageComponent = ({ src, alt, width, height }: ImageComponentProps) => {
 
   return (
     <Image
-      className="mr-6"
+      className=""
       src={imgSrc}
       alt={alt}
       width={width}
