@@ -2,7 +2,13 @@
 import Image from "next/image";
 import { useState } from "react";
 
-const ImageComponent = ({ src, alt, width, height }: ImageComponentProps) => {
+const ImageComponent = ({
+  src,
+  alt,
+  width,
+  height,
+  className,
+}: ImageComponentProps) => {
   const [imgSrc, setImgSrc] = useState(src);
 
   const handleError = () => {
@@ -11,7 +17,7 @@ const ImageComponent = ({ src, alt, width, height }: ImageComponentProps) => {
 
   return (
     <Image
-      className=""
+      className={className}
       src={imgSrc}
       alt={alt}
       width={width}

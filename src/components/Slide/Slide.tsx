@@ -12,8 +12,9 @@ const Slide: React.FC<SlideProps> = ({ image, title, description }) => {
           alt={title}
           width={width > 639 ? 80 : 50}
           height={width > 639 ? 80 : 50}
+          className="mr-6"
         />
-        <h2 className="font-normal sm:text-[32px]">{title}</h2>
+        <h2 className="font-normal sm:text-[24px]">{title}</h2>
       </div>
       <p className=" font-normal max-h-[100px] text-[14px] w-full sm:hidden ">
         {description}

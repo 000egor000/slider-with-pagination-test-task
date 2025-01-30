@@ -25,6 +25,7 @@ const Header: React.FC = () => {
           alt="Back"
           width={28}
           height={28}
+          className="sm:hidden"
         />
       </div>
     </header>
